@@ -1,0 +1,6 @@
+C:\Users\China\Desktop\TestLab\DrinkShop\DrinkShop\bin\Debug\DrinkShop.exe.config
+C:\Users\China\Desktop\TestLab\DrinkShop\DrinkShop\bin\Debug\DrinkShop.exe
+C:\Users\China\Desktop\TestLab\DrinkShop\DrinkShop\bin\Debug\DrinkShop.pdb
+C:\Users\China\Desktop\TestLab\DrinkShop\DrinkShop\obj\Debug\DrinkShop.csprojResolveAssemblyReference.cache
+C:\Users\China\Desktop\TestLab\DrinkShop\DrinkShop\obj\Debug\DrinkShop.exe
+C:\Users\China\Desktop\TestLab\DrinkShop\DrinkShop\obj\Debug\DrinkShop.pdb
