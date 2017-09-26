@@ -11,18 +11,22 @@ namespace DrinkShop
         private string name;
         private double price;
         private string category;
-        private float capacity;
+        private double capacity;
         private string description;
         private int count;
         private double profit;
 
-        public Good(string name, double price, string category, string description)
+        public Good(string description)
         {
+            string[] drinkValues = null;
+            drinkValues = description.Split(';');
             profit = 0;
-            this.name = name;
-            this.price = price;
-            this.category = category;
-            this.description = description;
+            name = drinkValues[0];
+            price = Convert.ToDouble(drinkValues[1]);
+            category = drinkValues[2];
+            capacity = Convert.ToDouble(drinkValues[3]);
+            description = drinkValues[4];
+            count = Convert.ToInt16(drinkValues[5]);
         }
         public string Name
         {
@@ -61,7 +65,7 @@ namespace DrinkShop
                 category = value;
             }
         }
-        public float Capacity
+        public double Capacity
         {
             get
             {

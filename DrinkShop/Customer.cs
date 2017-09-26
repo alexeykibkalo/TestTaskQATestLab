@@ -7,26 +7,21 @@ using System.Threading.Tasks;
 namespace DrinkShop
 {
     class Customer
-    {
-        int beverages;
-
-        public Customer()
+    {        
+        public int[] cart;
+        public Customer(int assortment)
         {
             Random rnd = new Random();
-            beverages = rnd.Next(1, 10);
-        }
-
-        public int Beverages
-        {
-            get
+            //генерация количества товара который купит покупатель
+            int beverages = rnd.Next(0, 9);
+            cart = new int[beverages];
+                    
+            for(int i = 0; i<beverages; i++)
             {
-                return beverages;
+                cart[i] = rnd.Next(0, assortment);
             }
 
-            set
-            {
-                beverages = value;
-            }
         }
+
     }
 }
