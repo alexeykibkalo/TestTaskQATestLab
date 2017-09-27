@@ -15,6 +15,8 @@ namespace DrinkShop
         private string description;
         private int count;
         private double profit;
+        private int sale;
+        private int buy;
 
         public Good(string description)
         {
@@ -111,6 +113,30 @@ namespace DrinkShop
             set
             {
                 profit += value;
+            }
+        }
+        public int Sale
+        {
+            get
+            {
+                return sale;
+            }
+
+            set
+            {
+                sale += value;
+            }
+        }
+        public int Buy
+        {
+            get
+            {
+                return buy;
+            }
+
+            set
+            {
+                buy =+ value;
             }
         }
 
