@@ -14,12 +14,11 @@ namespace DrinkShop
             Random rnd = new Random();
             //генерация количества товара который купит покупатель
             int beverages = rnd.Next(0, 9);
-         //   cart = new int[beverages];
             //так как товары генерируются рандомно и могут повторятся хаотично,
             //ассоциативный массив позволит иметь удобный доступ к видам товара и его количеству
             cart = new Dictionary<int, int>();
                     
-            for(int i = 0; i<beverages; i++)
+            for(int i = 0; i<=beverages; i++)
             {
                 int product = rnd.Next(0, assortment);
                 if(cart.ContainsKey(product))

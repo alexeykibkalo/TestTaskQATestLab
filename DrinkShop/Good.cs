@@ -18,10 +18,10 @@ namespace DrinkShop
         private int sale;
         private int buy;
 
-        public Good(string description)
+        public Good(string goodDescription)
         {
             string[] drinkValues = null;
-            drinkValues = description.Split(';');
+            drinkValues = goodDescription.Split(';');
             profit = 0;
             name = drinkValues[0];
             price = Convert.ToDouble(drinkValues[1]);
